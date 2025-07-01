@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app-container">
+      <div className="dashboard-card">
+        <h1 className="dashboard-title">
+          Welcome to Your Dashboard
+        </h1>
+        <p className="dashboard-description">
+          Your dashboard is now ready to use!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="button-container">
+          <button className="primary-button">
+            Primary Button
+          </button>
+          <button className="secondary-button">
+            Secondary Button
+          </button>
+        </div>
+        <div className="success-message">
+          <p className="success-text">
+            ✅ Dashboard is working correctly!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
